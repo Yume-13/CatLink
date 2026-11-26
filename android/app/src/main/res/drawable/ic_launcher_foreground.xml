@@ -1,0 +1,36 @@
+<!--
+  MIT License
+
+  Copyright © 2026 Yume-13
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- phone body (outline) -->
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="4"
+        android:pathData="M41,36 L45,36 Q51,36 51,42 L51,66 Q51,72 45,72 L41,72 Q35,72 35,66 L35,42 Q35,36 41,36 Z" />
+    <!-- screen, 60% full -->
+    <path android:fillColor="#FF7FE0BD"
+        android:pathData="M41,52 L45,52 Q47,52 47,54 L47,66 Q47,68 45,68 L41,68 Q39,68 39,66 L39,54 Q39,52 41,52 Z" />
+    <!-- pixel cat sitting beside the phone (same sprite as the PC app's CAT_TINY; eyes are cut-outs) -->
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M56,52h2.75v2.75h-2.75ZM67,52h2.75v2.75h-2.75ZM56,54.75h13.75v2.75h-13.75ZM56,57.5h2.75v2.75h-2.75ZM61.5,57.5h2.75v2.75h-2.75ZM67,57.5h2.75v2.75h-2.75ZM56,60.25h13.75v2.75h-13.75ZM58.75,63h8.25v2.75h-8.25ZM56,65.75h13.75v2.75h-13.75ZM72.5,65.75h2.75v2.75h-2.75ZM56,68.5h13.75v2.75h-13.75ZM72.5,68.5h2.75v2.75h-2.75ZM56,71.25h16.5v2.75h-16.5Z" />
+</vector>

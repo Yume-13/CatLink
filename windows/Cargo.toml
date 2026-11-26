@@ -1,0 +1,54 @@
+[package]
+name = "catlink"
+version = "0.1.0"
+license = "MIT"
+publish = false
+edition = "2024"
+build = "build.rs"
+
+[lib]
+name = "catlink_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "catlink"
+path = "src/main.rs"
+
+[[bin]]
+name = "catlink-cli"
+path = "src/bin/catlink-cli.rs"
+
+[dependencies]
+anyhow = "1.0.105"
+clap = { version = "4.6.9", features = ["derive"] }
+env_logger = "0.11.12"
+ipstack = "1.0.1"
+log = "0.4.35"
+qrcode = { version = "0.14", default-features = false }
+tiny-skia = { version = "0.12.0", default-features = false, features = ["std", "simd", "png-format"] }
+tokio = { version = "1.54.1", features = ["full"] }
+tun = { version = "0.8.15", features = ["async"] }
+windows-sys = { version = "0.61.2", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Dwm",
+    "Win32_Graphics_Gdi",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_NetworkManagement_Ndis",
+    "Win32_Networking_WinSock",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Registry",
+    "Win32_System_Threading",
+    "Win32_UI_HiDpi",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[build-dependencies]
+embed-resource = "3.0.12"
+tiny-skia = { version = "0.12.0", default-features = false, features = ["std", "png-format"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

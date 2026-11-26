@@ -1,0 +1,23 @@
+Third-party software included in catlink.exe and catlink-cli.exe
+=================================================================
+
+These programs are built with Rust. The Rust standard library is licensed under
+MIT OR Apache-2.0.
+
+Licenses:
+{{#each overview}}
+  {{{name}}} ({{count}} crates)
+{{/each}}
+
+{{#each licenses}}
+-------------------------------------------------------------------------------
+{{{name}}}
+
+Used by:
+{{#each used_by}}
+  {{crate.name}} {{crate.version}}
+{{/each}}
+
+{{{text}}}
+
+{{/each}}

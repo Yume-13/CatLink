@@ -1,0 +1,42 @@
+# Build output
+/windows/target/
+/android/.gradle/
+/android/.kotlin/
+/android/build/
+/android/app/build/
+/android/app/release/
+*.aab
+/android/local.properties
+/dist/
+/CatLink-*.zip
+*.apk
+
+# Third-party binaries (downloaded by build.ps1)
+/windows/vendor/
+
+# Local documentation
+/docs/
+*.md
+!/README.md
+!/LICENSE.md
+*.txt
+!/LICENSE.txt
+*.log
+
+# Editors and OS files
+.claude/
+.idea/
+.vscode/
+*.iml
+Thumbs.db
+.DS_Store
+
+# Keys and secrets
+*.jks
+*.keystore
+*.p12
+*.pem
+.env*
+adbkey*
+*.pdb
+keystore.properties
